@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4caf50;
+}
+
+.logo img {
+  width: 5vw;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background-color: rgb(186, 249, 198);
+}
+
+.login a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.login a:hover {
+  background-color: white;
+  color: #4caf50;
+}
+
+#my-account-icon {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+#search-bar {
+  width: 20vw;
+  height: 2rem;
+  border-radius: 50px;
+  padding: 4px;
+  font-size: 1rem;
+  background-color: #94c1a4;
+}
+
+#home-section {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+#home-front-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(assets/bg.jpg);
+  background-size: cover;
+  height: 90vh;
+  text-align: left;
+  color: white;
+}
+.coupons,
+.deals {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.coupons h2,
+.deals h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.coupons-grid,
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.coupon-card,
+.deal-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-card img,
+.deal-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.coupon-card h3,
+.deal-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.coupon-card p,
+.deal-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+#login-section {
+  display: none;
+}
+
+#sign-in-form-div {
+  display: none;
+}
+
+#sign-in-icon {
+  cursor: pointer;
+}
+
+#my-account-section {
+  display: none;
+}
+
+#Products-section {
+  display: block;
+}
+.products {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* height: 20vh; */
+}
+.product-card:hover {
+  background-color: rgb(175, 248, 181);
+  cursor: pointer;
+}
+
+.product-card img {
+  height: 30vh;
+  max-width: 30vh;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* to add the item in the container we can do this */
+
+.product-minus,
+.product-plus {
+  font-size: 2rem;
+  width: 4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  border-radius: 4rem;
+}
+
+.product-quantity {
+  font-size: 2rem;
+  width: 4rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+}
+
+.product-quantity-div {
+  display: flex;
+  color: black;
+}
+
+#About-us-section {
+  display: none;
+}
+
+.about-us {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#contact-section {
+  display: none;
+}
+
+.login-form {
+  display: none;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4caf50;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#cart-section {
+  display: none;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.download-app img {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
