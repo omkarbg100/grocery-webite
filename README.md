@@ -1,7 +1,7 @@
 # Online-Grocery-Store
 
 <div align="center">
-<img  src="screenshots/6.png">
+<img  src="assets/img.png">
 </div>
 
 Online Grocery Store is an eCommerce based web application for our Web Programming project. We had developed a sample in which user can search and find necessary information about any grocery item, can proceed to checkout to buy products. User can create an account
